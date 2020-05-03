@@ -12,7 +12,6 @@ const Chart = ({ data, country }) => {
     const getDailyData = async () => {
       const data = await fetchDailyData();
       setDailyData(data);
-      console.log("Chart", dailyData);
     };
 
     getDailyData();
@@ -64,8 +63,6 @@ const Chart = ({ data, country }) => {
       legend: { display: false },
       title: { display: true, text: `State in ${country}` },
     };
-
-    console.log("Chart:: ", barData);
 
     barChart = <Bar data={barData} options={barOptions} />;
   }

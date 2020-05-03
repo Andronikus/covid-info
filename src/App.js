@@ -12,8 +12,6 @@ function App() {
   useEffect(() => {
     async function getData(selectedCountry) {
       const fetchedData = await fetchData(selectedCountry);
-      console.log("App", fetchedData);
-
       setData(fetchedData);
     }
 

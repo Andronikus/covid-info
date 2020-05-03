@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: rgb(225, 225, 225);
+  background-color: rgb(235, 235, 235);
 }
 
 .container {
@@ -15,4 +15,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (max-width: 960px) {
+  .container {
+    width: 90% !important;
+    margin: 0 auto !important;
+  }
 }
